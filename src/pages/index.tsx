@@ -19,6 +19,10 @@ export default function Home() {
     getData();
   }, []);
 
+  const onDetailClick = () => {
+    router.push("/1");
+  };
+
   return (
     <>
       <Header isMyPage></Header>
@@ -26,7 +30,10 @@ export default function Home() {
         <section className="h-[calc(100vh-80px-156px)]">
           <MapContainer></MapContainer>
         </section>
-        <section className="fixed bottom-0 z-10 h-44 w-full rounded-t-2xl bg-white">
+        <section
+          className="fixed bottom-0 z-10 h-44 w-full max-w-xl rounded-t-2xl bg-white"
+          onClick={onDetailClick}
+        >
           <PlaceDetail></PlaceDetail>
         </section>
       </main>

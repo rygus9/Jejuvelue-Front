@@ -18,8 +18,12 @@ const Header = ({ isBack = false, isMyPage = false }: HeaderParams) => {
     router.push("/mypage");
   };
 
+  const onLogoClick = () => {
+    router.replace("/");
+  };
+
   return (
-    <header className="fixed top-0 z-30 h-20 w-full bg-white">
+    <header className="fixed top-0 z-30 h-20 w-full max-w-xl bg-white">
       <nav className="grid h-full w-full grid-cols-3">
         {isBack && (
           <div className="col-start-1 flex items-center justify-start pl-5">
@@ -29,12 +33,14 @@ const Header = ({ isBack = false, isMyPage = false }: HeaderParams) => {
           </div>
         )}
         <figure className="col-start-2 flex items-center justify-center">
-          <img
-            src="/images/logo/header_logo.webp"
-            alt="제주벨르 헤더 로고"
-            width="105"
-            height="33"
-          ></img>
+          <button className="h-fit w-fit" onClick={onLogoClick} type="button">
+            <img
+              src="/images/logo/header_logo.webp"
+              alt="제주벨르 헤더 로고"
+              width="105"
+              height="33"
+            ></img>
+          </button>
         </figure>
         {isMyPage && (
           <div className="col-start-3 flex items-center justify-end pr-5">

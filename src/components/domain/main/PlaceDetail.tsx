@@ -3,11 +3,11 @@ import CareRightIcon from "@/components/Icon/CareRightIcon";
 const PlaceDetail = () => {
   return (
     <div className="relative flex h-full w-full items-stretch space-x-3 px-7 py-9">
-      <figure className="aspect-square flex-shrink-0 overflow-hidden rounded-lg">
+      <figure className="aspect-square flex-shrink-0 rounded-lg">
         <img
           src="/images/mock/cat1.webp"
           alt="유적지 사진"
-          className="h-full w-full object-cover"
+          className="z-20 h-full w-full rounded-md object-cover"
         ></img>
       </figure>
       <p className="flex-1 rounded-lg bg-personalBlack p-4 text-white">
