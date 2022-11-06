@@ -1,7 +1,7 @@
 import { rest } from "msw";
 
 function authLoginMock() {
-  return rest.get("/api/v1/auth/login", (req, res, ctx) => {
+  return rest.post("/api/v1/auth/login", (req, res, ctx) => {
     return res(ctx.status(200), ctx.delay(100));
   });
 }
