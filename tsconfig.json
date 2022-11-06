@@ -23,7 +23,11 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/api/example.test.js"
+    "src/api/example.test.js",
+    "mocks/server.js",
+    "mocks/handlers.js",
+    "mocks/browser.js",
+    "src/mocks/index.js"
   ],
   "exclude": ["node_modules"]
 }
