@@ -5,14 +5,7 @@ interface IconParams {
 
 const MyPageIcon = ({ width, height }: IconParams) => {
   return (
-    <svg
-      width={width}
-      height={height}
-      viewBox="0 0 20 20"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlnsXlink="http://www.w3.org/1999/xlink"
-    >
+    <svg width={width} height={height} viewBox="0 0 20 20" fill="none">
       <rect width="20" height="20" fill="url(#pattern0)" />
       <defs>
         <pattern
