@@ -27,7 +27,7 @@ export default function StampModal({
     <Modal closeModal={closeModal} isOpen={isOpen}>
       <div className="relative space-y-3 px-10 py-8">
         <XMarkIcon
-          className="absolute right-3 top-3 h-6 w-6"
+          className="absolute right-3 top-3 h-6 w-6 cursor-pointer"
           onClick={closeModal}
         ></XMarkIcon>
         <figure>

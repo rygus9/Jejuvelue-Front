@@ -45,6 +45,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.18"],\
             ["prettier", "npm:2.7.1"],\
             ["prettier-plugin-tailwindcss", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:0.1.13"],\
+            ["rambda", "npm:7.4.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:18.2.0"],\
             ["tailwindcss", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:3.2.1"],\
@@ -5052,6 +5053,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.4.18"],\
             ["prettier", "npm:2.7.1"],\
             ["prettier-plugin-tailwindcss", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:0.1.13"],\
+            ["rambda", "npm:7.4.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:18.2.0"],\
             ["tailwindcss", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:3.2.1"],\
@@ -6971,6 +6973,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/quick-lru-npm-5.1.1-e38e0edce3-a516faa255.zip/node_modules/quick-lru/",\
           "packageDependencies": [\
             ["quick-lru", "npm:5.1.1"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["rambda", [\
+        ["npm:7.4.0", {\
+          "packageLocation": "./.yarn/cache/rambda-npm-7.4.0-9b13f2090c-9c3f1fecd8.zip/node_modules/rambda/",\
+          "packageDependencies": [\
+            ["rambda", "npm:7.4.0"]\
           ],\
           "linkType": "HARD"\
         }]\

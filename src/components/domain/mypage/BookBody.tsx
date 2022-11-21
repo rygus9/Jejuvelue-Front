@@ -1,8 +1,10 @@
 import { BadgeInfo, StampInfo } from "@/api/myPageApi";
-import OptImg from "@/components/common/OptImg";
 import { cls } from "@/utils/cls";
-import { useState } from "react";
-import StampModal from "../common/StampModal";
+import BadgeButton from "./BadgeButton";
+import StampButton from "./StampButton";
+import { range } from "rambda";
+import DefaultImg from "@/components/common/DefaultImg";
+import DotLoading from "@/components/common/DotLoading";
 
 interface BookBodyParams {
   stampList?: StampInfo[];
@@ -15,39 +17,45 @@ export default function BookBody({
   badgeList,
   nowPage,
 }: BookBodyParams) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
     <>
-      <section
-        className={cls(
-          "grid pt-9 pb-11",
-          nowPage == "stamp" ? "grid-cols-3 gap-1" : "grid-cols-1 gap-5 px-5"
-        )}
-      >
-        {nowPage === "stamp"
-          ? stampList &&
-            stampList.map((stamp) => (
-              <figure
-                key={stamp.placeId}
-                className="aspect-square w-full overflow-hidden rounded-full"
-              >
-                <OptImg src={stamp.stampImageUrl} alt={stamp.name}></OptImg>
-              </figure>
-            ))
-          : badgeList &&
-            badgeList.map((badge) => (
-              <figure
-                key={badge.badgeId}
-                className="aspect-square w-full overflow-hidden rounded-full"
-              >
-                <OptImg
-                  src={badge.badgeImageUrl}
-                  alt={badge.description}
-                ></OptImg>
-              </figure>
-            ))}
+      {stampList && badgeList ? (
+        <section
+          className={cls(
+            "grid pt-9 pb-11",
+            nowPage == "stamp" ? "grid-cols-3 gap-1" : "grid-cols-1 gap-5 px-5"
+          )}
+        >
+          {nowPage === "stamp"
+            ? stampList &&
+              stampList.map((stamp) => (
+                <StampButton key={stamp.placeId} stamp={stamp}></StampButton>
+              ))
+            : badgeList &&
+              badgeList.map((badge) => (
+                <BadgeButton key={badge.badgeId} badge={badge}></BadgeButton>
+              ))}
+        </section>
+      ) : (
+        <LoadingView></LoadingView>
+      )}
+    </>
+  );
+}
+
+function LoadingView() {
+  return (
+    <>
+      <section className={cls("grid grid-cols-3 gap-1 pt-9 ")}>
+        {range(0, 9).map((elem) => (
+          <figure key={elem} className="overflow-hidden rounded-full">
+            <DefaultImg></DefaultImg>
+          </figure>
+        ))}
       </section>
+      <div className="py-8">
+        <DotLoading></DotLoading>
+      </div>
     </>
   );
 }
