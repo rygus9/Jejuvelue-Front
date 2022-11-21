@@ -2,6 +2,7 @@ import { cls } from "@/utils/cls";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
+import OptImg from "./OptImg";
 
 interface Carousel {
   imageURLs: string[];
@@ -28,7 +29,7 @@ export default function Carousel({ imageURLs }: Carousel) {
 
   useEffect(() => {
     if (figureRef.current == null) return;
-    setImageSize(figureRef.current.clientWidth);
+    setImageSize(figureRef.current.clientWidth + 100);
   }, [figureRef]);
 
   const onSlotClick = (slotNum: number) => () => {
@@ -41,9 +42,8 @@ export default function Carousel({ imageURLs }: Carousel) {
   return (
     <figure className="relative h-full w-full" ref={figureRef}>
       <AnimatePresence custom={direction} initial={false}>
-        <motion.img
+        <motion.div
           ref={imageRef}
-          src={imageURLs[nowIndex]}
           key={imageURLs[nowIndex]}
           initial="initial"
           animate="animate"
@@ -53,8 +53,10 @@ export default function Carousel({ imageURLs }: Carousel) {
           }}
           variants={variants(iamgeSize)}
           custom={direction}
-          className="absolute left-0 top-0 h-full w-full rounded-md object-cover"
-        ></motion.img>
+          className="absolute left-0 top-0 h-full w-full space-x-32 overflow-hidden rounded-md object-cover"
+        >
+          <OptImg src={imageURLs[nowIndex]} alt={imageURLs[nowIndex]}></OptImg>
+        </motion.div>
       </AnimatePresence>
       <section className="absolute bottom-2 left-1/2 z-10 -translate-x-1/2 space-x-3">
         {imageURLs.map((_, index) => (

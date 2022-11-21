@@ -1,7 +1,7 @@
 import { AxiosResponse } from "axios";
 import client from "./client";
 
-interface PlaceListApiRes {
+export interface PlaceListApiRes {
   placeId: number;
   name: string;
   shortDescription: string;

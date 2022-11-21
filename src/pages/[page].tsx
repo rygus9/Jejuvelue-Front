@@ -1,5 +1,6 @@
 import Carousel from "@/components/common/Carousel";
-import StampModal from "@/components/domain/detail/StampModal";
+import OptImg from "@/components/common/OptImg";
+import StampModal from "@/components/domain/common/StampModal";
 import Header from "@/components/layout/Header";
 import { useRouter } from "next/router";
 import { useState } from "react";
@@ -16,12 +17,15 @@ export default function DetailPage() {
           <Carousel
             imageURLs={["/images/mock/cat1.webp", "/images/mock/cat2.webp"]}
           ></Carousel>
-          <img
-            src="/images/mock/stamp_off_001.png"
-            alt="stamp 사진"
+          <figure
             className="absolute -bottom-6 -right-8 z-40"
             onClick={() => setIsOpen(true)}
-          ></img>
+          >
+            <OptImg
+              src="/images/mock/stamp_off_001.png"
+              alt="stamp 사진"
+            ></OptImg>
+          </figure>
         </section>
         <section className="space-y-3">
           <h2 className="w-full rounded-md border border-gray-300 px-4 py-1.5 text-center">
@@ -37,7 +41,13 @@ export default function DetailPage() {
           보면 섬뜩하면서도 귀엽습니다. 역시 귀엽습니다.
         </p>
       </main>
-      <StampModal isOpen={isOpen} setIsOpen={setIsOpen}></StampModal>
+      <StampModal
+        imgSrc="/images/mock/stamp_off_001.png"
+        description="고양이는 정말로 귀엽습니다 ㅎㅎㅎ 고양이는 정말로 귀엽습니다 ㅎㅎㅎ 고양이는 정말로 귀엽습니다 ㅎㅎㅎ"
+        title="고양이굿굿"
+        isOpen={isOpen}
+        setIsOpen={setIsOpen}
+      ></StampModal>
     </>
   );
 }

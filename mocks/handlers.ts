@@ -17,8 +17,8 @@ function servicePlacesMock() {
           name: "고양이는 귀엽다",
           shortDescription:
             "고양이는 정말 귀엽습니다. 제 장래 희망은 고양이입니다.",
-          stampImageUrl: "/images/mock/cat1.webp",
-          placeImageUrl: "/images/mock/stamp_off_001.webp",
+          placeImageUrl: "/images/mock/cat1.webp",
+          stampImageUrl: "/images/mock/stamp_off_001.png",
           latitude: 33.49202209142753,
           longitude: 126.45408248124293,
         },
@@ -27,8 +27,8 @@ function servicePlacesMock() {
           name: "고양이는 행복하다",
           shortDescription:
             "사람들이 저를 보고 갓생을 산다고 하는 데 정말 갓생은 고양이라 생각합니다.",
-          stampImageUrl: "/images/mock/cat2.webp",
-          placeImageUrl: "/images/mock/stamp_off_002.webp",
+          placeImageUrl: "/images/mock/cat2.webp",
+          stampImageUrl: "/images/mock/stamp_on_001.png",
           latitude: 33.47968505922961,
           longitude: 126.40630416243812,
         },
@@ -83,51 +83,99 @@ function serviceMypage() {
             name: "고양이는 귀엽다",
             shortDescription:
               "고양이는 정말 귀엽습니다. 제 장래 희망은 고양이입니다.",
-            stampImageUrl: "/images/mock/cat1.webp",
-            placeImageUrl: "/images/mock/stamp_off_001.webp",
+            stampImageUrl: "/images/mock/stamp_off_001.png",
+            placeImageUrl: "/images/mock/cat1.webp",
           },
           {
             placeId: 2,
             name: "고양이는 행복하다",
             shortDescription:
               "사람들이 저를 보고 갓생을 산다고 하는 데 정말 갓생은 고양이라 생각합니다.",
-            stampImageUrl: "/images/mock/cat2.webp",
-            placeImageUrl: "/images/mock/stamp_off_002.webp",
+            stampImageUrl: "/images/mock/stamp_on_001.png",
+            placeImageUrl: "/images/mock/cat2.webp",
           },
           {
             placeId: 3,
             name: "고양이는 귀엽다",
             shortDescription:
               "고양이는 정말 귀엽습니다. 제 장래 희망은 고양이입니다.",
-            stampImageUrl: "/images/mock/cat1.webp",
-            placeImageUrl: "/images/mock/stamp_off_001.webp",
+            stampImageUrl: "/images/mock/stamp_off_001.png",
+            placeImageUrl: "/images/mock/cat1.webp",
           },
           {
             placeId: 4,
             name: "고양이는 행복하다",
             shortDescription:
               "사람들이 저를 보고 갓생을 산다고 하는 데 정말 갓생은 고양이라 생각합니다.",
-            stampImageUrl: "/images/mock/cat2.webp",
-            placeImageUrl: "/images/mock/stamp_off_002.webp",
+            stampImageUrl: "/images/mock/stamp_on_001.png",
+            placeImageUrl: "/images/mock/cat2.webp",
           },
           {
             placeId: 5,
             name: "고양이는 귀엽다",
             shortDescription:
               "고양이는 정말 귀엽습니다. 제 장래 희망은 고양이입니다.",
-            stampImageUrl: "/images/mock/cat1.webp",
-            placeImageUrl: "/images/mock/stamp_off_001.webp",
+            stampImageUrl: "/images/mock/stamp_off_001.png",
+            placeImageUrl: "/images/mock/cat1.webp",
           },
           {
             placeId: 6,
             name: "고양이는 행복하다",
             shortDescription:
               "사람들이 저를 보고 갓생을 산다고 하는 데 정말 갓생은 고양이라 생각합니다.",
-            stampImageUrl: "/images/mock/cat2.webp",
-            placeImageUrl: "/images/mock/stamp_off_002.webp",
+            stampImageUrl: "/images/mock/stamp_on_001.png",
+            placeImageUrl: "/images/mock/cat2.webp",
+          },
+          {
+            placeId: 7,
+            name: "고양이는 귀엽다",
+            shortDescription:
+              "고양이는 정말 귀엽습니다. 제 장래 희망은 고양이입니다.",
+            stampImageUrl: "/images/mock/stamp_off_001.png",
+            placeImageUrl: "/images/mock/cat1.webp",
+          },
+          {
+            placeId: 8,
+            name: "고양이는 행복하다",
+            shortDescription:
+              "사람들이 저를 보고 갓생을 산다고 하는 데 정말 갓생은 고양이라 생각합니다.",
+            stampImageUrl: "/images/mock/stamp_on_001.png",
+            placeImageUrl: "/images/mock/cat2.webp",
+          },
+          {
+            placeId: 9,
+            name: "고양이는 귀엽다",
+            shortDescription:
+              "고양이는 정말 귀엽습니다. 제 장래 희망은 고양이입니다.",
+            stampImageUrl: "/images/mock/stamp_off_001.png",
+            placeImageUrl: "/images/mock/cat1.webp",
+          },
+          {
+            placeId: 10,
+            name: "고양이는 행복하다",
+            shortDescription:
+              "사람들이 저를 보고 갓생을 산다고 하는 데 정말 갓생은 고양이라 생각합니다.",
+            stampImageUrl: "/images/mock/stamp_on_001.png",
+            placeImageUrl: "/images/mock/cat2.webp",
+          },
+          {
+            placeId: 11,
+            name: "고양이는 귀엽다",
+            shortDescription:
+              "고양이는 정말 귀엽습니다. 제 장래 희망은 고양이입니다.",
+            stampImageUrl: "/images/mock/stamp_off_001.png",
+            placeImageUrl: "/images/mock/cat1.webp",
+          },
+          {
+            placeId: 12,
+            name: "고양이는 행복하다",
+            shortDescription:
+              "사람들이 저를 보고 갓생을 산다고 하는 데 정말 갓생은 고양이라 생각합니다.",
+            stampImageUrl: "/images/mock/stamp_on_001.png",
+            placeImageUrl: "/images/mock/cat2.webp",
           },
         ],
-        stampCnt: 3,
+        stampCnt: 6,
         badgeList: [
           {
             badgeId: 1,
@@ -139,8 +187,18 @@ function serviceMypage() {
             description: "고양고양해2",
             badgeImageUrl: "/images/mock/cat5.webp",
           },
+          {
+            badgeId: 3,
+            description: "고양고양해",
+            badgeImageUrl: "/images/mock/cat4.webp",
+          },
+          {
+            badgeId: 4,
+            description: "고양고양해2",
+            badgeImageUrl: "/images/mock/cat5.webp",
+          },
         ],
-        badgeCnt: 0,
+        badgeCnt: 2,
       })
     );
   });
