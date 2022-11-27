@@ -4,8 +4,9 @@ import { FormEvent } from "react";
 export default function Login() {
   const onSubmit = async (e: FormEvent) => {
     e.preventDefault();
+
     const data = await loginApi("gugu");
-    console.log(data);
+    localStorage.setItem("nickname", data.data);
   };
 
   return (
