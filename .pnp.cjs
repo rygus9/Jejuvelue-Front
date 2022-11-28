@@ -48,6 +48,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rambda", "npm:7.4.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:18.2.0"],\
+            ["recoil", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:0.7.6"],\
+            ["swiper", "npm:8.4.5"],\
             ["tailwindcss", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:3.2.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
           ],\
@@ -3273,6 +3275,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["dom7", [\
+        ["npm:4.0.4", {\
+          "packageLocation": "./.yarn/cache/dom7-npm-4.0.4-637bc4420a-b38604f74e.zip/node_modules/dom7/",\
+          "packageDependencies": [\
+            ["dom7", "npm:4.0.4"],\
+            ["ssr-window", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["electron-to-chromium", [\
         ["npm:1.4.284", {\
           "packageLocation": "./.yarn/cache/electron-to-chromium-npm-1.4.284-2fb881a7ac-be496e9dca.zip/node_modules/electron-to-chromium/",\
@@ -4389,6 +4401,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["hamt_plus", [\
+        ["npm:1.0.2", {\
+          "packageLocation": "./.yarn/cache/hamt_plus-npm-1.0.2-67a52ee1df-af26ea32db.zip/node_modules/hamt_plus/",\
+          "packageDependencies": [\
+            ["hamt_plus", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["has", [\
         ["npm:1.0.3", {\
           "packageLocation": "./.yarn/cache/has-npm-1.0.3-b7f00631c1-b9ad53d53b.zip/node_modules/has/",\
@@ -5056,6 +5077,8 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["rambda", "npm:7.4.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:18.2.0"],\
+            ["recoil", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:0.7.6"],\
+            ["swiper", "npm:8.4.5"],\
             ["tailwindcss", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:3.2.1"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"]\
           ],\
@@ -7068,6 +7091,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["recoil", [\
+        ["npm:0.7.6", {\
+          "packageLocation": "./.yarn/cache/recoil-npm-0.7.6-6f8de04e3d-2b31dd29a7.zip/node_modules/recoil/",\
+          "packageDependencies": [\
+            ["recoil", "npm:0.7.6"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:0.7.6", {\
+          "packageLocation": "./.yarn/__virtual__/recoil-virtual-968179582d/0/cache/recoil-npm-0.7.6-6f8de04e3d-2b31dd29a7.zip/node_modules/recoil/",\
+          "packageDependencies": [\
+            ["recoil", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:0.7.6"],\
+            ["@types/react", "npm:18.0.24"],\
+            ["@types/react-dom", "npm:18.0.8"],\
+            ["@types/react-native", null],\
+            ["hamt_plus", "npm:1.0.2"],\
+            ["react", "npm:18.2.0"],\
+            ["react-dom", "virtual:15d3e0ddc678e355e8e657461fd6835388c21b2dec3778e480ca20f90a9e5e91286c4f50800e9d9bb8fa0f7d3a77755db54f58ad23d7bcd90f98fb87f2d2b664#npm:18.2.0"],\
+            ["react-native", null]\
+          ],\
+          "packagePeers": [\
+            "@types/react-dom",\
+            "@types/react-native",\
+            "@types/react",\
+            "react-dom",\
+            "react-native",\
+            "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["regenerator-runtime", [\
         ["npm:0.13.10", {\
           "packageLocation": "./.yarn/cache/regenerator-runtime-npm-0.13.10-57e3c1406b-09893f5a9e.zip/node_modules/regenerator-runtime/",\
@@ -7435,6 +7489,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["ssr-window", [\
+        ["npm:4.0.2", {\
+          "packageLocation": "./.yarn/cache/ssr-window-npm-4.0.2-01f9c0151e-df18260092.zip/node_modules/ssr-window/",\
+          "packageDependencies": [\
+            ["ssr-window", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["ssri", [\
         ["npm:9.0.1", {\
           "packageLocation": "./.yarn/cache/ssri-npm-9.0.1-33ce27f4f8-fb58f5e46b.zip/node_modules/ssri/",\
@@ -7665,6 +7728,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/supports-preserve-symlinks-flag-npm-1.0.0-f17c4d0028-53b1e247e6.zip/node_modules/supports-preserve-symlinks-flag/",\
           "packageDependencies": [\
             ["supports-preserve-symlinks-flag", "npm:1.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["swiper", [\
+        ["npm:8.4.5", {\
+          "packageLocation": "./.yarn/unplugged/swiper-npm-8.4.5-c5c16f4b35/node_modules/swiper/",\
+          "packageDependencies": [\
+            ["swiper", "npm:8.4.5"],\
+            ["dom7", "npm:4.0.4"],\
+            ["ssr-window", "npm:4.0.2"]\
           ],\
           "linkType": "HARD"\
         }]\

@@ -14,7 +14,7 @@ interface DetailPageApiRes {
   longitude: number;
   address: string;
   source: string;
-  visited: boolean;
+  isVisited: boolean;
   placeImageUrlDtoList: { orderNum: number; imageUrl: string }[];
 }
 

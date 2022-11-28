@@ -49,7 +49,7 @@ function servicePlaceMock() {
           "고양이는 귀엽습니다. 고양이는 정말 귀엽습니다. 그런 고양이도 야생동물입니다. 저번에 학교 인기 탑 고양이가 까치를 사냥해려 했던 거 보면 섬뜩하면서도 귀엽습니다. 역시 귀엽습니다.",
         shortDescription:
           "고양이는 정말 귀엽습니다. 제 장래 희망은 고양이입니다.",
-        stampImageUrl: "/images/mock/stamp_off_001.webp",
+        stampImageUrl: "/images/mock/stamp_off_001.png",
         visitorNumber: 1200,
         starAvg: 4.5,
         latitude: 33.49202209142753,

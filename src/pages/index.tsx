@@ -1,21 +1,13 @@
-import placeListApi, { PlaceListApiRes } from "@/api/placeListApi";
 import MapContainer from "@/components/common/MapContainer";
 import PlaceDetail from "@/components/domain/main/PlaceDetail";
 import Header from "@/components/layout/Header";
-import { useEffect, useState } from "react";
+import placeIdAtom from "@/recoil/place/placeIdAtom";
+import placeListAtom from "@/recoil/place/placeListAtom";
+import { useRecoilState, useRecoilValue } from "recoil";
 
 export default function Home() {
-  const [placeId, setPlaceId] = useState<number>(0);
-  const [placeList, setPlaceList] = useState<PlaceListApiRes[] | undefined>();
-
-  useEffect(() => {
-    async function getData() {
-      const data = await placeListApi();
-      console.log(data);
-      setPlaceList(data.data);
-    }
-    getData();
-  }, []);
+  const [placeId, setPlaceId] = useRecoilState(placeIdAtom);
+  const placeList = useRecoilValue(placeListAtom);
 
   return (
     <>
@@ -23,6 +15,7 @@ export default function Home() {
       <main>
         <section className="h-[calc(100vh-80px-156px)]">
           <MapContainer
+            placeId={placeId}
             setPlace={setPlaceId}
             placeList={placeList}
           ></MapContainer>

@@ -4,19 +4,19 @@ import { XMarkIcon } from "@heroicons/react/20/solid";
 
 interface StampModalParams {
   imgSrc: string;
-  description: string;
   isOpen: boolean;
   setIsOpen: (x: boolean) => void;
   title?: string;
+  description?: string;
   controlPanel?: JSX.Element;
 }
 
 export default function StampModal({
   imgSrc,
-  description,
   isOpen,
   setIsOpen,
   title,
+  description,
   controlPanel,
 }: StampModalParams) {
   function closeModal() {

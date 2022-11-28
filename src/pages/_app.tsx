@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
+import { RecoilRoot } from "recoil";
 
 export default function App({ Component, pageProps }: AppProps) {
   const [shouldRender, setShouldRender] = useState(false);
@@ -17,5 +18,13 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, []);
 
-  return <>{shouldRender && <Component {...pageProps} />}</>;
+  return (
+    <>
+      {shouldRender && (
+        <RecoilRoot>
+          <Component {...pageProps} />
+        </RecoilRoot>
+      )}
+    </>
+  );
 }

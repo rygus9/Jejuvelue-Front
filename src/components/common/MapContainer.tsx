@@ -14,11 +14,13 @@ interface MapContainerParams {
     name: string;
     placeId: number;
   }[];
+  placeId: number;
 }
 
 export default function MapContainer({
   setPlace,
   placeList,
+  placeId,
 }: MapContainerParams) {
   useEffect(() => {
     if (!placeList) return;
@@ -32,10 +34,13 @@ export default function MapContainer({
     const onLoadKakaoMap = () => {
       window.kakao.maps.load(() => {
         const container = document.getElementById("map");
+        const nowPlace = placeList.filter(
+          (elem) => elem.placeId === placeId
+        )[0];
         const options = {
           center: new window.kakao.maps.LatLng(
-            33.4703481431908,
-            126.826301683464
+            nowPlace.latitude,
+            nowPlace.longitude
           ),
         };
         const map = new window.kakao.maps.Map(container, options);
@@ -66,7 +71,7 @@ export default function MapContainer({
             setPlace(elem.placeId);
           });
         });
-        map.setLevel(9);
+        map.setLevel(8);
       });
     };
     mapScript.addEventListener("load", onLoadKakaoMap);
