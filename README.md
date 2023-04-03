@@ -1,34 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Jejuvelue Front
 
-## Getting Started
+> 해당 프로젝트는 2022년 2학기에 해커톤인 구름톤에 참여하여 진행하게 된 프로젝트입니다.
+> 2~3일 정도 기간 내에서 진행해였는데 굉장히 재미있었습니다. 완성도는 떨어지지만 재밌었습니다.
 
-First, run the development server:
+기획자 1명, 디자이너 1명, 프론트 2명, 벡엔드 1명에서 진행한 해커톤 프로젝트
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+주제는 제주도의 어두운 역사를 가지는 유적지를 탐방하는 다크투어리즘이다.
+이 때 yarn berry를 알아서 yarn berry를 적용해본 것 같다. 벡엔드 DB에 무식하게 유적지를 때려넣고 이를 출력해주었던 기억이 난다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+배포는 능력있는 벡엔드 개발자가 프론트와 벡 모두 하나로 배포했다.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+어려웠던 부분은 GPS 사용하는 부분과 거리 계산해서 UI 변화주는 부분인데 그냥 브라우저 GPS 사용하고 코드도 좀 더럽다.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- 따로 영상 같은게 없는 게 아쉽다. 링크 살아있었을 때 찍어둘 걸 그랬다.
+- 지금이야 개발 환경, 배포 환경을 구분할 수 있지만 이 때는 그런게 없었다.
